@@ -1,5 +1,5 @@
 # Cleanup task
-apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: cleanup
@@ -35,7 +35,7 @@ spec:
 
 ---
 # Git Clone task
-apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: git-clone
@@ -68,7 +68,7 @@ spec:
 
 ---
 # Flake8 task
-apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: flake8
@@ -91,7 +91,7 @@ spec:
 
 ---
 # Nose task
-apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: nose
@@ -117,7 +117,7 @@ spec:
 
 ---
 # Buildah task
-apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: buildah
